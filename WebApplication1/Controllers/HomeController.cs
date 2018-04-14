@@ -8,9 +8,16 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public List<string> Index()
         {
-            return View();
+            List<string> countries = new List<string>()
+            {
+                "Guyana",
+                "Suriname",
+                "Brasil",
+                "Jamaica"
+            };
+            return countries;
         }
 
         public ActionResult About()
